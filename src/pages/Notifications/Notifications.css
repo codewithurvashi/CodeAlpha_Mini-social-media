@@ -1,0 +1,55 @@
+.notifications-page{
+    display:flex;
+    background:#f4f6fb;
+    min-height:100vh;
+}
+
+.notifications-container{
+    flex:1;
+    padding:30px;
+}
+
+.notification{
+    display:flex;
+    gap:15px;
+    align-items:center;
+    background:#fff;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.notification:hover{
+    transform:translateY(-2px);
+}
+
+.notification img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.notification.unread{
+    border-left:5px solid #1877f2;
+    background:#eef5ff;
+}
+
+.notification.read{
+    opacity:.8;
+}
+
+.notification h4{
+    margin:0;
+}
+
+.notification p{
+    margin:4px 0;
+    color:#555;
+}
+
+.notification small{
+    color:gray;
+}

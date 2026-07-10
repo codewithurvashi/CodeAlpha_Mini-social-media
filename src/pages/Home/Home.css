@@ -1,0 +1,87 @@
+/* Main Layout */
+
+.home-container{
+    display:grid;
+    grid-template-columns:270px 1fr 320px;
+    gap:25px;
+    padding:25px;
+    align-items:start;
+    background:#F5F7FA;
+    min-height:calc(100vh - 70px);
+}
+
+/* Feed Section */
+
+.feed{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* Common Card Style */
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+/* Loading / Empty Feed */
+
+.empty-feed{
+    background:#fff;
+    border-radius:15px;
+    padding:50px;
+    text-align:center;
+    color:#777;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.empty-feed h2{
+    margin-bottom:10px;
+    color:#444;
+}
+
+/* Feed Title */
+
+.feed-title{
+    margin-bottom:10px;
+    color:#333;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .home-container{
+        grid-template-columns:250px 1fr;
+    }
+
+    .right-sidebar{
+        display:none;
+    }
+
+}
+
+@media(max-width:900px){
+
+    .home-container{
+        grid-template-columns:1fr;
+        padding:15px;
+    }
+
+    .sidebar{
+        display:none;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .home-container{
+        padding:10px;
+        gap:15px;
+    }
+
+}
