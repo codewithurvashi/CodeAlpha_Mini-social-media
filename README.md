@@ -1,16 +1,162 @@
-# React + Vite
+# 📱 Mini Social Media App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **MERN (MongoDB, Express.js, React.js, Node.js)** social media application that allows users to connect, share posts, interact with others, and manage their profiles through a modern and responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🔐 User Authentication (JWT)
+- 👤 User Registration & Login
+- 📝 Create, Edit, and Delete Posts
+- ❤️ Like and Unlike Posts
+- 💬 Comment on Posts
+- 👥 Follow & Unfollow Users
+- 📄 User Profile Management
+- 📱 Responsive UI
+- 🔒 Protected Routes
+- ⚡ RESTful API Integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- HTML5
+- CSS3
+- JavaScript
+- Axios
+- React Router DOM
+
+### Backend
+- Node.js
+- Express.js
+
+### Database
+- MongoDB
+- Mongoose
+
+### Authentication
+- JSON Web Token (JWT)
+- bcrypt.js
+
+---
+
+## 📂 Project Structure
+
+```
+mini-social-app/
+│
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── services/
+│   │   └── App.js
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/mini-social-app.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd mini-social-app
+```
+
+### 3. Install backend dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### 4. Install frontend dependencies
+
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## ▶️ Run the Project
+
+### Start Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start Frontend
+
+```bash
+cd frontend
+npm start
+```
+
+The application will run at:
+
+Frontend:
+```
+http://localhost:3000
+```
+
+Backend:
+```
+http://localhost:5000
+
+---
+
+## 📌 Future Improvements
+
+- 📖 Stories Feature
+- 💬 Real-time Chat
+- 🔔 Notifications
+- 📌 Saved Posts
+- 🌙 Dark Mode
+- 📤 Image Upload Optimization
+- ☁️ Cloudinary Integration
+- 🚀 Deployment (Vercel + Render)
+
+---
+
+## 👩‍💻 Developer
+
+**Urvashi Sharma**
